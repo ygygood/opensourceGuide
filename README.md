@@ -1,4 +1,4 @@
-# opensourceGuide
+# Opensource Guide
 
 ## Site 구축(Gatsby)
 
