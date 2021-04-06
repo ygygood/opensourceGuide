@@ -4,11 +4,10 @@
 
 ## Github 구축
 
-## Opensource IC
+## Opensource CI
 ---
-### Build
+### Build - Travis
 ---
-+Travis연동  
 1.travis 페이지 가입(github계정) 후 repository 활성화  
 1.travis.yml 작성
 ```yml
@@ -37,7 +36,7 @@ notifications:
 + 참고 사이트  https://velog.io/@recordsbeat/travis-ci-maven-%EC%97%B0%EB%8F%99
 
 ### Test
-### Code Coverage
+### Code Coverage - CodeCov
 1.codecov 사이트 가입 후 repository 활성화  
 1.travis.yml script추가  
 ```yml
@@ -51,17 +50,17 @@ env:
 1.pom.xml plugin 추가  
 ```xml
 <plugin>
-			    <groupId>org.codehaus.mojo</groupId>
-			    <artifactId>cobertura-maven-plugin</artifactId>
-			    <version>2.7</version>
-			    <configuration>
-			        <formats>
-			            <format>html</format>
-			            <format>xml</format>
-			        </formats>
-			        <check />
-			    </configuration>
-			</plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>cobertura-maven-plugin</artifactId>
+	<version>2.7</version>
+	<configuration>
+		<formats>
+			<format>html</format>
+			<format>xml</format>
+		</formats>
+		<check />
+	</configuration>
+</plugin>
 ```
 ### Static Test
 ### Release
