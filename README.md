@@ -40,14 +40,14 @@ notifications:
 ### Code Coverage
 1.codecov 사이트 가입 후 repository 활성화  
 1.travis.yml script추가  
-'''yml
+```yml
 script: "mvn cobertura:cobertura"
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - codecov
 env:
    - CODECOV_TOME=583d22f4-1c33-4b5f-91ad-a370a0290fab
-'''
+```
 1.pom.xml plugin 추가  
 ```xml
 <plugin>
