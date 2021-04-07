@@ -65,8 +65,19 @@ env:
 ### Code Quality - SonarCloud
 1.SonarCloud와 Github연결  
 + SonarCloud 회원가입(https://sonarcloud.io/)  
-+ 
++ Allow to access for github repository
++ edit .travis.yml
+```yml
+addons:
+  sonarcloud:
+    organization: "giyeonyu"
+    token:
+      secure: "**************************" # encrypted value of your token
 
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+```
 3.ddd
 ### Static Test
 ### Release
