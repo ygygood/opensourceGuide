@@ -23,7 +23,8 @@ There are some simple steps.
 - Travis CI, Github계정으로 회원가입
 - 연동시킬 Repository 활성화
 - Project root경로에 .travis.yml 작성  
-``` yml   
+
+```yml   
 
 language: java
 jdk:
@@ -53,6 +54,7 @@ notifications:
 #### Code Coverage - CodeCov
 - codecov 사이트 가입 후 repository 활성화  
 - travis.yml script추가  
+
 ```yml
 script: "mvn cobertura:cobertura"
 after_success:
@@ -82,6 +84,7 @@ env:
 - SonarCloud 회원가입(https://sonarcloud.io/)  
 - Allow to access for github repository
 - get secure key
+
 ```shell
 gem install travis
 travis login --github-token ghp_uS****************wtN0iiSxg
@@ -90,6 +93,7 @@ travis encrypt SOMEVAR="fe7fe6**********e014803dfa8f" -r giyeonYu/OSS
 ghp_uS****************wtN0iiSxg => github token
 fe7fe6**********e014803dfa8f => travis token
 + edit .travis.yml
+
 ```yml
 addons:
   sonarcloud:
