@@ -23,7 +23,7 @@ There are some simple steps.
 - Travis CI, Github계정으로 회원가입
 - 연동시킬 Repository 활성화
 - Project root경로에 .travis.yml 작성  
-```yml
+```yml   
 language: java
 jdk:
   - openjdk11  # using jdk11 at least for sonarcloud
