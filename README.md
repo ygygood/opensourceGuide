@@ -12,20 +12,18 @@ There are some simple steps.
 
 ## Getting Started
 ## CI/CD Pipeline]
----
+
 ### Planing
----
----
+
 ### Develop
----
----
+
 ### CI/CD
----
+
 #### Travis
 - Travis CI, Github계정으로 회원가입
 - 연동시킬 Repository 활성화
 - Project root경로에 .travis.yml 작성
-```yml
+```
 language: java
 jdk:
   - openjdk11  # using jdk11 at least for sonarcloud
@@ -47,9 +45,9 @@ notifications:
 ```
 - Github Readme.md에 Travis badge 추가  
 + 참고 사이트  https://velog.io/@recordsbeat/travis-ci-maven-%EC%97%B0%EB%8F%99
----
+
 ### Build
----
+
 #### Code Coverage - CodeCov
 - codecov 사이트 가입 후 repository 활성화  
 - travis.yml script추가  
@@ -61,7 +59,8 @@ after_success:
 env:
    - CODECOV_TOME=583d22f4-1c33-4b5f-91ad-a370a0290fab
 ```
-- pom.xml plugin 추가  
+- pom.xml plugin 추가 
+ 
 ```xml
 <plugin>
 	<groupId>org.codehaus.mojo</groupId>
@@ -101,21 +100,17 @@ script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.login=c1a58ac2e42e06851dd4e9c8de969a76a1d53a1f
 ```
 sonarcloud needs over jdk11 at least.
----
+
 ### Verify
----
----
+
 ### Release
----
----
+
 ### Feedback
----
----
+
 ## Documentation
----
----
+
 ## Site
----
+
 
 
 
