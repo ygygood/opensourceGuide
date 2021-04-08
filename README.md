@@ -1,10 +1,19 @@
 # Opensource Guide
 
-## Site 구축(Gatsby)
+This guide is for who want to restrucure own's system to open source.
+There are some simple steps.
 
-## Github 구축
+## Table of Contents
 
-## Opensource CI
+ - [Getting Started]
+ - [CI/CD Pipeline]
+ - [Documentation]
+ - [Site] 
+
+### Getting Started
+### CI/CD Pipeline]
+### Documentation
+### Site
 ---
 ### Build - Travis
 ---
