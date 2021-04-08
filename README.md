@@ -6,9 +6,9 @@ There are some simple steps.
 ## Table of Contents
 
  - [Getting Started](#getting-started)
- - [CI/CD Pipeline](#CI/CD-Pipeline)
- - [Documentation](#Documentation)
- - [Site](#Site)
+ - [CI/CD Pipeline](#ci/cd-pipeline)
+ - [Documentation](#documentation)
+ - [Site](#site)
 
 ## Getting Started
 ## CI/CD Pipeline]
