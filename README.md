@@ -24,6 +24,7 @@ There are some simple steps.
 - 연동시킬 Repository 활성화
 - Project root경로에 .travis.yml 작성  
 ```yml   
+
 language: java
 jdk:
   - openjdk11  # using jdk11 at least for sonarcloud
@@ -42,6 +43,7 @@ notifications:
   email:
     recipients:
       - your@Email.com
+      
 ```
 - Github Readme.md에 Travis badge 추가  
 + 참고 사이트  https://velog.io/@recordsbeat/travis-ci-maven-%EC%97%B0%EB%8F%99
