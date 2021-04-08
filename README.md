@@ -5,10 +5,10 @@ There are some simple steps.
 
 ## Table of Contents
 
- - [Getting Started]
- - [CI/CD Pipeline]
- - [Documentation]
- - [Site] 
+ - [Getting Started](#getting-started)
+ - [CI/CD Pipeline](#CI/CD-Pipeline)
+ - [Documentation](#Documentation)
+ - [Site](#Site)
 
 ## Getting Started
 ## CI/CD Pipeline]
