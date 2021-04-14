@@ -9,6 +9,7 @@ There are some simple steps.
  - [CI/CD Pipeline](#ci/cd-pipeline)
  - [Documentation](#documentation)
  - [Site](#site)
+ - [Etc](#etc)
 
 ## Getting Started
 ## CI/CD Pipeline]
@@ -118,7 +119,7 @@ sonarcloud needs over jdk11 at least.
 ## Site - Gatsby Static Site Generator
 + Gatsby Starter Template사이트에 방문하여 원하는 Template 설치 
   https://www.gatsbyjs.com/starters/  
-``` shell
+```shell
 # Insatllation with 'git clone'
 git clone git@github.com:<user>/<repository> my-site
 cd my-site
@@ -137,7 +138,31 @@ gatsby develop
   - Pages에서 해당 branch, root 로 설정하여 저장
   ![image](https://user-images.githubusercontent.com/20086137/114368273-36c37900-9bb8-11eb-9d9b-e090513ce31c.png)
 
+## Etc
+### Telegram Notify
+1.Add ./github/workflow/main.xml for github action
+```yml
+name: telegram message
+on: [push]
+jobs:
 
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send custom message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          The ${{ github.event_name }} event triggered final step.
+          echo This event is a pull request that had an assignee removed.
+```
+2.Add repository secrets
++ Settings ->  Secrets
+- TELEGRAOM_TO, TELEGRAM_TOKEN 생성
 
 
 
