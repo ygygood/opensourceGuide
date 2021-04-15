@@ -162,7 +162,8 @@ jobs:
 ```
 2.Add repository secrets
 + Settings ->  Secrets
-- TELEGRAOM_TO, TELEGRAM_TOKEN 생성
+- TELEGRAM_TO, TELEGRAM_TOKEN 생성
+- guide to get TELEGRAM_TO, TELEGRAM_TOKEN (https://core.telegram.org/bots/api)
 
 
 
